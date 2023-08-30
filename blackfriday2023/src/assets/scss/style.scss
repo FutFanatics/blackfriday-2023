@@ -1,0 +1,212 @@
+//sass --watch src/assets/scss/style.scss:src/assets/css/style.css
+
+
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+body{
+    background-color: #000 !important;
+}
+
+*{
+    font-family: 'gotham';
+}
+
+.c-descontos{
+    .col-left{
+        padding-right: 0px;
+    }
+    .col-right{
+        padding-left: 0px;
+    }
+    .slider-desconto{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        div{
+            width: 500px;
+            display: flex;
+            justify-content: center;
+        }
+        .icon{
+            height: 16px;
+        }
+    }
+}
+
+.c-destaque{
+    overflow: hidden;
+    .slick-destaque{
+        width: 125%;
+
+        .item{
+            padding: 8px;
+        }
+    }
+}
+
+.c-banners-bottom{
+    .box-banner-full{
+        min-height: 50vh;
+
+        .banner-full{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .slick-banners_bottom{
+        .item{
+            padding: 8px;
+        }
+        .bannersBottom{
+            width: 100%;
+        }
+
+    }
+}
+
+.c-App{
+    margin-top: 64px;
+    .container-app{
+        min-height: 400px;
+
+        .app-install{
+            position: absolute;
+            height: 480px;
+            bottom: -70%;
+            left: -40%;
+        }
+    }
+    
+}
+
+.c-footer{
+    padding-top: 32px;
+    padding-bottom: 30px;
+
+    .container{
+      border-top: 1px solid #424242;
+    }
+    .title-footer{
+      margin-top: 32px;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 20px;
+
+    }
+    .title-footer-mob{
+      
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 0px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;    
+      
+      .icon-down{
+        height: 10px;
+      }
+      
+    }
+    .links-footer{
+      color: #757575;
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: 400;
+      text-decoration: none;
+
+      &:hover{
+        text-shadow: 0 0 1px #aeaeae;
+      }
+
+      &:last-child{
+        margin-bottom: 0px;
+      }
+      .icon-cel{
+        height: 25px;
+        margin-right: 4px;
+      }
+    }
+
+    .box-images{
+      .img-certificado{
+        height: 80px;
+        object-fit: contain;
+        margin-right: 32px;
+
+        &__last{
+          width: 100%;
+          margin-top: 8px;
+        }
+      }
+    }
+    .method-pagament{
+      border-top: #262626 1px solid;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      .pagament{
+        margin-right: 12px;
+
+        &:last-child{
+          margin-right: 0px;
+        }
+      }
+    }
+
+    .app-img{
+      margin-right: 8px;
+      width: 40%;
+
+      &-mob{
+        margin-right: 0px;
+      }
+
+      img{
+          width: 100%;
+      }
+        
+
+      &:last-child{
+        margin-right: 0px;
+      }
+    }
+    .box-collapse{
+      border-bottom: 1px solid #404040;
+      padding-bottom: 16px;
+      padding-top: 16px;
+    }
+
+    .sign{
+      .sign-futfanatics{
+        width: 125px;
+        @include md{
+          width: 40%;
+        }
+        
+      }
+      .content-sign{
+        font-size: 14px;
+        color: #757575;
+        line-height: 1.4rem;
+        text-align: center;
+        padding-top: 0px;
+        @include md{
+          padding: 16px;
+          padding-top: 0px;
+          text-align: start;
+        }
+      }
+      .img-shared{
+        width: 25px;
+        height: 25px;
+        margin: 0 8px ;
+      }
+    }
+  }
