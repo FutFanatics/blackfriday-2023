@@ -220,7 +220,14 @@
         }
     }
   }
-
+  .c-descontos{
+    .col-left{
+      padding-right: 0px;
+    }
+    .col-right{
+      padding-left: 0px;
+    }
+  }
   .c-banners_shirt{
     padding-bottom: 32px;
     .thumbnail{
@@ -342,7 +349,7 @@
   .c-destaque{
     overflow: hidden;
     .slick-destaque{
-        width: 125%;
+        width: 100%;
 
         .item{
             padding: 8px;
@@ -684,7 +691,7 @@
         // }
         a{
           text-decoration: none;
-          color: #FFF;
+          color: #00DF5E;
         }
 
         .icon-link-inter{
@@ -1083,8 +1090,8 @@
           }
   
           &:hover {
-            color: #1E6200;
-            border-color: #1E6200 !important;
+            color: #00DF5E;
+            border-color: #00DF5E !important;
           }
         }
       }
@@ -1114,14 +1121,14 @@
   
               &:hover {
                 text-decoration: none;
-                color: #1E6200;
+                color: #00DF5E;
               }
   
               &:before {
                 content: "";
                 width: 0;
                 height: 4px;
-                background: #1E6200;
+                background: #00DF5E;
                 position: absolute;
                 left: 0;
                 bottom: 0;
@@ -1218,14 +1225,14 @@
                       margin-top: 10px;
                       transition: all .2s ease;
 
-                      border: 1px solid #1E6200;
+                      border: 1px solid #00DF5E;
                       background: none;
-                      color: #1E6200;
+                      color: #00DF5E;
   
                       &:hover {
                         text-decoration: none;
-                        background: #1E6200;
-                        color: #000;
+                        background: #00DF5E;
+                        color: $gray;
                         
                       }
                     }
@@ -1239,7 +1246,7 @@
   
             &:hover {
               > a {
-              color: #1E6200 !important;
+              color: #00DF5E !important;
                 &:before {
                   width: 100%;
                   // transition-delay: 0.5s;
@@ -1375,7 +1382,7 @@
             &.link-user {
               margin-left: 0;
               margin-right: 0;
-              background: #1E6200;
+              background: #00DF5E;
               color: #000;
               text-decoration: none;
   
@@ -1394,7 +1401,7 @@
   
             &.back {
               color: #000;
-              background: #1E6200;
+              background: #00DF5E;
               position: relative;
               text-align: center;
               border-bottom: none;
@@ -1497,7 +1504,7 @@
     top: 0px;
     font-size: 12px;
     font-weight: bold;
-    background: #FDC800;
+    background: #00DF5E;
     color: #000;
     border-radius: 50%;
     width: 20px;

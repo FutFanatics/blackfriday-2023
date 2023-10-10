@@ -4,10 +4,12 @@ import $ from 'jquery';
 import Menu_Desk from "./Menu/Menu_Desk";
 
 import logo from "../../img/icon/futfanatics.svg";
+import logo2 from "../../img/icon/futfanaticscyber.svg";
 import iconUser from '../../img/icon/iconuser.svg';
 import iconcart from '../../img/icon/iconcart.svg';
 import iconinternacional from "../../img/icon/internacional.svg";
 import menu from "../../img/icon/hamburguer.svg";
+import  { useState, useEffect } from 'react';
 
 import '../../assets/css/style.css';
 import Menu_Mobile from './Menu/Menu_Mobile';
@@ -16,9 +18,13 @@ import Menu_Mobile from './Menu/Menu_Mobile';
 class Header extends Component  {
     constructor(props) {
         super(props);
+        this.state = {
+            logoImage: "https://beta.futfanatics.com.br/blackfriday-2023/img/icon/futfanatics.svg", 
+        };
     }
-
+    
     componentDidMount = () => {
+        this.checkLogoDate();
 
         function getCookie(cname) {
             var name = cname + "=";
@@ -353,7 +359,16 @@ class Header extends Component  {
         
 
     }
-
+    checkLogoDate = () => {
+        const currentDate = new Date();
+        const logoChangeDate = new Date('2023-10-20'); 
+        if (currentDate >= logoChangeDate) {
+            
+            this.setState({
+                logoImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/futfanaticscyber.svg", 
+            });
+        }
+    }
     render(){
         return (
             <header>
@@ -366,7 +381,7 @@ class Header extends Component  {
                                 </div>
                                 <div className="col-4 col-lg-1 d-flex justify-content-center justify-content-lg-start">
                                     <a href="https://futfanatics.com.br" className="logo">
-                                        <img className="icon-logo-fut" src={logo}/>
+                                        <img className="icon-logo-fut" src={this.state.logoImage}/>
                                     </a>
                                 </div>
                                 <div className="col-12 order-last col-lg-8 order-lg-0 position-relative">

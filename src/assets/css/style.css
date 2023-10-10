@@ -177,6 +177,13 @@
   transform: scale(1.05);
 }
 
+.c-descontos .col-left {
+  padding-right: 0px;
+}
+.c-descontos .col-right {
+  padding-left: 0px;
+}
+
 .c-banners_shirt {
   padding-bottom: 32px;
 }
@@ -288,7 +295,7 @@
   overflow: hidden;
 }
 .c-destaque .slick-destaque {
-  width: 125%;
+  width: 100%;
 }
 .c-destaque .slick-destaque .item {
   padding: 8px;
@@ -572,7 +579,7 @@ header .links-usuario div > a.active {
 }
 header .links-usuario .link-inter a {
   text-decoration: none;
-  color: #FFF;
+  color: #00DF5E;
 }
 header .links-usuario .link-inter .icon-link-inter {
   margin-right: 8px;
@@ -882,8 +889,8 @@ header .header-nav .tag-new {
     outline: none;
   }
   .links-usuario .link-inter a:hover {
-    color: #1E6200;
-    border-color: #1E6200 !important;
+    color: #00DF5E;
+    border-color: #00DF5E !important;
   }
   .header-nav .col-12 {
     position: unset;
@@ -905,13 +912,13 @@ header .header-nav .tag-new {
   }
   .header-nav nav > ul > li > a:hover {
     text-decoration: none;
-    color: #1E6200;
+    color: #00DF5E;
   }
   .header-nav nav > ul > li > a:before {
     content: "";
     width: 0;
     height: 4px;
-    background: #1E6200;
+    background: #00DF5E;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -989,20 +996,20 @@ header .header-nav .tag-new {
     min-width: 160px;
     margin-top: 10px;
     transition: all 0.2s ease;
-    border: 1px solid #1E6200;
+    border: 1px solid #00DF5E;
     background: none;
-    color: #1E6200;
+    color: #00DF5E;
   }
   .header-nav nav > ul > li .child-container ul li.menu-links a:hover {
     text-decoration: none;
-    background: #1E6200;
-    color: #000;
+    background: #00DF5E;
+    color: #747474;
   }
   .header-nav nav > ul > li .child-container ul li .see-all {
     color: #AEAEAE;
   }
   .header-nav nav > ul > li:hover > a {
-    color: #1E6200 !important;
+    color: #00DF5E !important;
   }
   .header-nav nav > ul > li:hover > a:before {
     width: 100%;
@@ -1107,7 +1114,7 @@ header .header-nav .tag-new {
   .header-nav nav ul li.link-user {
     margin-left: 0;
     margin-right: 0;
-    background: #1E6200;
+    background: #00DF5E;
     color: #000;
     text-decoration: none;
   }
@@ -1123,7 +1130,7 @@ header .header-nav .tag-new {
   }
   .header-nav nav ul li.back {
     color: #000;
-    background: #1E6200;
+    background: #00DF5E;
     position: relative;
     text-align: center;
     border-bottom: none;
@@ -1208,7 +1215,7 @@ header .header-nav .tag-new {
   top: 0px;
   font-size: 12px;
   font-weight: bold;
-  background: #FDC800;
+  background: #00DF5E;
   color: #000;
   border-radius: 50%;
   width: 20px;
