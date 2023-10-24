@@ -33,7 +33,7 @@ function Forms (){
                                 <div className="col-12">
                                     <div className="text row">
                                         <div className="col-12 col-md-4 mb-2 mb-lg-0">
-                                            <input id="cmp1" type="text" name="cmp1"  placeholder="seuemail@exemplo.com" format="" className="form-control type_EMAIL field-required" maxlength="80" required="required" />
+                                            <input id="cmp1" type="text" name="cmp1"  placeholder="seuemail@exemplo.com" format="" className="form-control type_EMAIL field-required" required="required" />
                                         </div>
                                         <div className="col-12 col-md-4 mb-lg-0 ">
                                             <select name="cmp12" id="cmp12" hd-name="cmp12" className="w-100 invi-select field-required type_LVM">

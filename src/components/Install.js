@@ -25,7 +25,7 @@ function Install() {
                                 <img className='app-install' src={ImageCelphone}/>
                             </div>
                             <div className='col-md-7 d-flex flex-column justify-content-center'>
-                                <Title>Faça a sua torcida com o App da FutFanatics</Title>
+                                <Title className='d-md-block d-none'>Faça a sua torcida com o App da FutFanatics</Title>
                                 <div className='container-install d-flex mt-4'>
                                     <BoxInstall>
                                         <img className='image-install' src={Imgapp}/>

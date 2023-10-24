@@ -176,7 +176,15 @@
   .App-link {
     color: #61dafb;
   }
-  
+  .c-banners{
+    .box-banner{
+      margin-top: 16px;
+
+      @include md{
+        margin-top: 0px;
+      }
+    }
+  }
   .c-banner{
     top:-50px;
 
@@ -222,10 +230,18 @@
   }
   .c-descontos{
     .col-left{
-      padding-right: 0px;
+      @include md{
+        padding-right: 0px;
+      }
+      
     }
     .col-right{
-      padding-left: 0px;
+      margin-top: 16px;
+      @include md{
+        padding-left: 0px;
+        margin-top: 0px;
+      }
+      
     }
   }
   .c-banners_shirt{
@@ -349,7 +365,12 @@
   .c-destaque{
     overflow: hidden;
     .slick-destaque{
+      width: 125%;
+
+      @include md{
         width: 100%;
+      }
+        
 
         .item{
             padding: 8px;
@@ -359,7 +380,9 @@
 
   .c-banners-bottom{
     .box-banner-full{
-        min-height: 50vh;
+        @include md{
+          min-height: 50vh;
+        }
 
         .banner-full{
             width: 100%;
@@ -367,6 +390,10 @@
         }
     }
     .slick-banners_bottom{
+      width: 125%;
+        @include md{
+          width: 100%;
+        }
         .item{
             padding: 8px;
         }

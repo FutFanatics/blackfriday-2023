@@ -22,8 +22,8 @@ function Destaque() {
           {
               breakpoint: 600,
               settings : {
-                slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToShow: 2,
+                slidesToScroll: 1,
                 dots: false,
                 arrows:false,
               }

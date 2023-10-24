@@ -10,6 +10,7 @@ import { Section } from "./section";
 import { TitleMarca } from "./Text";
 
 import BannerFull from '../img/banner/banner-full.png'
+import BannerFullMob from '../img/banner/bannersmob/banner-bottom.png'
 import BannerBottom1 from '../img/banner/bannerbottom1.png'
 import BannerBottom2 from '../img/banner/bannerbottom2.png'
 import BannerBottom3 from '../img/banner/bannerbottom3.png'
@@ -37,7 +38,8 @@ function BannerBottom() {
         return(
             <Section className='c-banners-bottom'>
                 <div className='box-banner-full'>
-                    <img className='banner-full' src={BannerFull}/>
+                    <img className='banner-full d-md-block d-none' src={BannerFull}/>
+                    <img className='banner-full d-md-none' src={BannerFullMob}/>
                 </div>
                 <div className='container mt-3'>
                     <Slider {...bannersbottom} className='slick-banners_bottom'>

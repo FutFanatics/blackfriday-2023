@@ -137,6 +137,15 @@
   color: #61dafb;
 }
 
+.c-banners .box-banner {
+  margin-top: 16px;
+}
+@media (min-width: 1200px) {
+  .c-banners .box-banner {
+    margin-top: 0px;
+  }
+}
+
 .c-banner {
   top: -50px;
 }
@@ -177,11 +186,19 @@
   transform: scale(1.05);
 }
 
-.c-descontos .col-left {
-  padding-right: 0px;
+@media (min-width: 1200px) {
+  .c-descontos .col-left {
+    padding-right: 0px;
+  }
 }
 .c-descontos .col-right {
-  padding-left: 0px;
+  margin-top: 16px;
+}
+@media (min-width: 1200px) {
+  .c-descontos .col-right {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
 }
 
 .c-banners_shirt {
@@ -295,18 +312,33 @@
   overflow: hidden;
 }
 .c-destaque .slick-destaque {
-  width: 100%;
+  width: 125%;
+}
+@media (min-width: 1200px) {
+  .c-destaque .slick-destaque {
+    width: 100%;
+  }
 }
 .c-destaque .slick-destaque .item {
   padding: 8px;
 }
 
-.c-banners-bottom .box-banner-full {
-  min-height: 50vh;
+@media (min-width: 1200px) {
+  .c-banners-bottom .box-banner-full {
+    min-height: 50vh;
+  }
 }
 .c-banners-bottom .box-banner-full .banner-full {
   width: 100%;
   object-fit: cover;
+}
+.c-banners-bottom .slick-banners_bottom {
+  width: 125%;
+}
+@media (min-width: 1200px) {
+  .c-banners-bottom .slick-banners_bottom {
+    width: 100%;
+  }
 }
 .c-banners-bottom .slick-banners_bottom .item {
   padding: 8px;

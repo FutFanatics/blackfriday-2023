@@ -18,7 +18,7 @@ export const TitleMarca = styled.span`
     padding-bottom: 16px;
 `
 export const NameMarca = styled.span`
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;

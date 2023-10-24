@@ -15,6 +15,7 @@ import '../../assets/css/style.css';
 import Menu_Mobile from './Menu/Menu_Mobile';
 
 
+
 class Header extends Component  {
     constructor(props) {
         super(props);
@@ -117,6 +118,7 @@ class Header extends Component  {
         }, 200);
 
         var lastScrollTop = 0;
+
         $(window).scroll(function(event){
             var st = $(this).scrollTop();
             var hgHeader = $('header').height();
@@ -158,23 +160,10 @@ class Header extends Component  {
             lastScrollTop = st;
         });
 
-
         $('.header-infos .links-usuario .search a').on('click', function() {
             $('.header-infos .busca').stop(true).slideToggle();
             return false;
         });
-
-        // $('.header-nav nav > ul > li.parent').on('mouseenter',function() {
-        //     console.log('----')
-        //     console.log(this)
-        //     //$(this).addClass('hover');
-        //     //$('.bg-menu').stop(true, true).fadeIn();
-        // })
-        
-        // $('.header-nav nav > ul > li.parent').on('mouseleave',function() {
-        //     //$(this).removeClass('hover');
-        //     //$('.bg-menu').stop(true, true).fadeOut();
-        // });
 
         $('header .menu-mob-open').on('click', function() {
             $('body').addClass('menu-open');
@@ -228,70 +217,9 @@ class Header extends Component  {
             }
         });
 
-        $('header .links-usuario .central > a, header .links-usuario .cart-header > a').on('click', function() {
-            if (!isMobile()) {
-                
-                if (!$('.cart-note').hasClass('d-none')) {
-                    $('.cart-note').addClass('d-none')
-                }
-                if ($(this).closest('div').hasClass('cart-header') && !$('.central .menu-central').hasClass('d-none')) {
-                    $('.central > a').trigger('click');
-                }
-
-                if ($(this).closest('div').hasClass('central') && !$('.cart-header .menu-cart').hasClass('d-none')) {
-                    $('.cart-header > a').trigger('click');
-                }
-
-                $(this).toggleClass('active');
-                $(this).find('+ .menu-central, + .menu-cart').toggleClass('d-none');
-                return false;
-            }
-        });
-
         var ff_app_cookie = 'ff_app';
         var ff_app_cookie_value = 'Banner App';
         var ff_app_cookie_domain = "futfanatics.com.br";
-
-        function initSmartBanner() {
-            var playStoreUrl = "https://play.google.com/store/apps/details?id=com.futfanatics";
-            var appStoreUrl  = "https://itunes.apple.com/us/app/futfanatics/id1422835821?mt=8";
-            // var mobile = detectarMobile();
-            var btnFecharSB = $('.banner-app .btn-fechar');
-            var link = "https://app.futfanatics.com.br/deeplink?page=home&action=";
-
-            if (isMobile()) {
-                // var platform = detectarOS();
-
-                // var link = null;
-                // if (/apple/i.test(platform)) {
-                // 	link = appStoreUrl;
-                // } else {
-                // 	if (/android/i.test(platform)) {
-                // 		link = playStoreUrl;
-                // 	}
-                // } 
-
-                $('.link-app').attr('href', link);
-
-                link !== null ? openSmartBanner() : console.log('Undefined OS');
-            }
-
-            btnFecharSB.on('click', function(event) {
-                closeSmartBanner();
-            });
-        }
-
-        function openSmartBanner() {
-            if (checkCookie(ff_app_cookie) == "") {
-                $('.banner-app').slideDown('slow');
-                // setCookie(ff_app_cookie, ff_app_cookie_value, 10, ff_app_cookie_domain);
-            }
-        }
-
-        function closeSmartBanner() {
-            $('.banner-app').slideUp();
-            setCookie(ff_app_cookie, ff_app_cookie_value, 10, ff_app_cookie_domain);
-        }
 
         function getNotNaN($dom) {
             if (!isNaN($dom))
@@ -346,19 +274,8 @@ class Header extends Component  {
                 return "";
             }
         }
-
-        initSmartBanner();
-
-        $('a').each(function(index, ele){
-
-            var href = $(this).attr('href');
-            $(this).attr('href', href +  window.location.search);
-        })
-
-        
-        
-
     }
+
     checkLogoDate = () => {
         const currentDate = new Date();
         const logoChangeDate = new Date('2023-10-20'); 
@@ -369,6 +286,7 @@ class Header extends Component  {
             });
         }
     }
+    
     render(){
         return (
             <header>
@@ -409,7 +327,7 @@ class Header extends Component  {
                                         <span className="qnty">0</span>
                                         <a href="https://futfanatics.com.br/loja/carrinho.php?loja=311840"><img className="icon-cart" src={iconcart}/></a>
 
-                                        <div class="cart-note d-none">
+                                        <div className="cart-note d-none">
                                             <h3>Carrinho Atualizado</h3>
                                             <a href="https://www.futfanatics.com.br/loja/carrinho.php?loja=311840">Finalizar compra</a>
                                         </div>
