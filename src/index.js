@@ -39,23 +39,7 @@ root.render(
   </React.StrictMode>
 );
 
-function setSkin() {
-  document.body.style.backgroundColor = "#000";
-  const divs = Array.from(document.querySelectorAll(".chaordic"));
-  divs.map((div) => {
-    const hasChildren = div.childNodes;
-    const widget =
-      div &&
-      div.childNodes &&
-      div.childNodes[0] &&
-      div.childNodes[0].contentDocument &&
-      div.childNodes[0].contentDocument.querySelector("#widget");
-    if (widget) {
-      widget.classList.add("skin-bf");
-    }
-  });
-}
-setSkin();
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

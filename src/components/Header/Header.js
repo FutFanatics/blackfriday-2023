@@ -21,12 +21,15 @@ class Header extends Component  {
         super(props);
         this.state = {
             logoImage: "https://beta.futfanatics.com.br/blackfriday-2023/img/icon/futfanatics.svg", 
+            CartImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/iconcart.svg",
+            InternacionalImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/internacional.svg",
+            UserImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/iconuser.svg",
         };
     }
     
     componentDidMount = () => {
         this.checkLogoDate();
-
+            
         function getCookie(cname) {
             var name = cname + "=";
             var decodedCookie = document.cookie;
@@ -114,6 +117,9 @@ class Header extends Component  {
         setTimeout(function () {
             window.Cart = $(".c-cart-header").cart();
             window.Cart.load();
+
+            setSkin();
+
             console.log("[cart.js] - init");
         }, 200);
 
@@ -228,6 +234,25 @@ class Header extends Component  {
                 return 0;
         }
 
+        function setSkin() {
+            setTimeout(() => {
+              document.body.style.backgroundColor = "#000";
+              const divs = Array.from(document.querySelectorAll(".chaordic"));
+              divs.map((div) => {
+                const hasChildren = div.childNodes;
+                const widget =
+                  div &&
+                  div.childNodes &&
+                  div.childNodes[0] &&
+                  div.childNodes[0].contentDocument &&
+                  div.childNodes[0].contentDocument.querySelector("#widget");
+                if (widget) {
+                  widget.classList.add("skin-bf");
+                }
+              });
+            }, 10);
+          }
+
         function isMobile() {
             if (window.innerWidth > 991) {
                 return false;
@@ -278,12 +303,16 @@ class Header extends Component  {
 
     checkLogoDate = () => {
         const currentDate = new Date();
-        const logoChangeDate = new Date('2023-10-20'); 
+        const logoChangeDate = new Date('2023-10-30'); 
         if (currentDate >= logoChangeDate) {
             
             this.setState({
                 logoImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/futfanaticscyber.svg", 
+                CartImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/icon-cartcyber.svg",
+                InternacionalImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/internacionalcyber.svg",
+                UserImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/iconusercyber.svg",
             });
+            $('.header-top').addClass('cyber');
         }
     }
     
@@ -315,17 +344,17 @@ class Header extends Component  {
                                 </div>
                                 <div className="col-4 col-lg-3 d-flex justify-content-between links-usuario">
                                     <div className="link-inter align-self-center">
-                                        <a href="https://www.futfanatics.net/?utm_source=futfanatics-nacional&utm_medium=referral&utm_campaign=selo-topo" target="_blank" className="d-none d-lg-flex align-items-center"><img className="icon-link-inter" src={iconinternacional}/>International Orders</a>
+                                        <a href="https://www.futfanatics.net/?utm_source=futfanatics-nacional&utm_medium=referral&utm_campaign=selo-topo" target="_blank" className="d-none d-lg-flex align-items-center"><img className="icon-link-inter" src={this.state.InternacionalImage}/>International Orders</a>
                                     </div>
                                     <div className="c-central">
-                                        <a href="https://futfanatics.com.br/central-do-cliente" className="d-none d-md-block"><img className="icon-user" src={iconUser}/></a>
+                                        <a href="https://futfanatics.com.br/central-do-cliente" className="d-none d-md-block"><img className="icon-user" src={this.state.UserImage}/></a>
                                     </div>
                                     <div className="search d-lg-none invisible">
                                         <a href=""><i className="icon-search"></i></a>
                                     </div>
                                     <div className="c-cart-header">
                                         <span className="qnty">0</span>
-                                        <a href="https://futfanatics.com.br/loja/carrinho.php?loja=311840"><img className="icon-cart" src={iconcart}/></a>
+                                        <a href="https://futfanatics.com.br/loja/carrinho.php?loja=311840"><img className="icon-cart" src={this.state.CartImage}/></a>
 
                                         <div className="cart-note d-none">
                                             <h3>Carrinho Atualizado</h3>
