@@ -27,7 +27,7 @@ function BannerBottom() {
               breakpoint: 600,
               settings : {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 dots: false,
                 arrows:false,
               }

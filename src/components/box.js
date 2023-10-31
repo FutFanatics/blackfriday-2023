@@ -19,6 +19,10 @@ export const BoxApp = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
+
+    @media(max-width:478px){
+        border-radius:10px;
+    }
 `
 
 export const BoxInstall = styled.div`
@@ -37,6 +41,10 @@ export const BoxInstall = styled.div`
     &:first-child{
         margin-left: 0px;
     }
+
+    &.cyber{
+        border: 2px solid #00BAFF;
+    }
 `
 export const BoxDesconto = styled.div`
     width: 50%;
@@ -50,6 +58,6 @@ export const BoxDesconto = styled.div`
 
 export const BoxForms = styled.div`
     background-color: #161616;
-    padding: 20px 40px;
+    padding: 30px 40px;
     border-radius: 20px;
 `

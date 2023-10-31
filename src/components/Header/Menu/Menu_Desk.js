@@ -35,7 +35,7 @@ function Menu_Desk(){
                                                                 <li><a href="https://www.futfanatics.com.br/esportes">Esportes</a></li>
                                                                 <li><a href="https://www.futfanatics.com.br/calcados">Calçados</a></li>
                                                                 <li><a href="https://www.futfanatics.com.br/casual">Casual</a></li>
-                                                                <li><a href="https://www.futfanatics.com.br/copa-do-mundo-2022">Vem, Hexa</a></li>
+                                                                <li><a href="https://www.futfanatics.com.br/outlet">outlet</a></li>
                                                             </ul>
                                                         </li>
                                                     </ul>
@@ -954,7 +954,7 @@ function Menu_Desk(){
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.futfanatics.com.br/copa-do-mundo-2022" className="title-hexa">Vem, Hexa</a>
+                                <a href="https://www.futfanatics.com.br/outlet" className="title-hexa">outlet</a>
                             </li>
                         </ul>
                     </nav>

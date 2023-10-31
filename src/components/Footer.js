@@ -26,7 +26,7 @@ import youtube from '../img/icon/share/youtube.svg';
 import iconSac from '../img/icon/sac.svg'
 import iconup from '../img/icon/icon-up.svg'
 import icondown from '../img/icon/icon-down.svg';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Collapse from 'react-bootstrap/Collapse';
 
 
@@ -36,6 +36,24 @@ function Footer(){
     const [help, sethelp] = useState(false);
     const [contact, setcontact] = useState(false);
     const [certificate, setcertificate] = useState(false);
+    const [dataAtingida, setDataAtingida] = useState(false);
+    const dataDeMudanca = new Date('2023-10-15');
+
+    useEffect(() => {
+        const verificarData = () => {
+        const dataAtual = new Date();
+
+        if (dataAtual >= dataDeMudanca) {
+            setDataAtingida(true); 
+        }
+        };
+
+        verificarData();
+
+        const intervalo = setInterval(verificarData, 60000);
+
+        return () => clearInterval(intervalo);
+    }, []);
     return(
         <section className="c-footer">
             <div className="container d-none d-md-block">
@@ -117,7 +135,7 @@ function Footer(){
 
                 <div className='row sign'>
                     <div className='col-10 d-flex align-items-start'>
-                        <img src={signature} className='sign-futfanatics lozad'/>
+                        <img src="https://beta.futfanatics.com.br/blackfriday-2023/img/icon/futfanatics-footer.svg" className='sign-futfanatics lozad'/>
                         <p className='content-sign'>
                         FF.Com Esportes Ltda CNPJ 05.328.923/0001-90 Rodovia Arthur Boigues Filho, 59 CEP: 19026-650 Presidente Prudente - SP Copyright 2012-2017 www.futfanatics.com.br - TODOS OS
                         DIREITOS RESERVADOS. É vetada a reprodução total ou parcial das informações aqui veiculadas sem a expressa autorização da administração do site. Os preços e condições depagamento

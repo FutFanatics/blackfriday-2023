@@ -127,17 +127,20 @@
   @include md{
     background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/home/black-home.png");
     min-height: 70vh;
+    background-size: cover;
   }
 
   &.cyber{
     background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/home/cyber-home_mob.png");
     background-position: center;
     margin-bottom: 10px;
+    background-size: cover;
 
     @include md{
       min-height: 70vh;
       background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/home/cyber-home.png");
       background-position: center;
+      background-size: cover;
       
     }
   }
@@ -316,6 +319,7 @@
 }
 
 .c-banners-bottom {
+  overflow: hidden;
   .box-banner-full {
     @include md {
       min-height: 50vh;
@@ -341,16 +345,36 @@
 }
 
 .c-Install {
-  margin-top: 64px;
+
+  @include md{
+    margin-top: 64px;
+  }
   .container-app {
     min-height: 400px;
-
+    
     .app-install {
-      position: absolute;
-      height: 480px;
-      bottom: -70%;
-      left: -40%;
+
+      @include md{
+        bottom: -40%;
+        left: -40%;
+        position: absolute;
+        height: 480px;
+      }
+      
+      height: 420px;
+      
     }
+  }
+  .container-install{
+    justify-content: center;
+    margin-bottom: 24px;
+    position: relative;
+    top: -20px;
+
+    @include md{
+      margin-top: 3.5rem;
+    }
+
   }
 }
 
@@ -1491,9 +1515,45 @@ header {
 }
 
 .c-forms {
+  input{
+    background-color: #393939;
+    border: 1px solid #393939;
+    color: #656565;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+  }
   select {
     border-radius: 5px;
-    padding: 0.575rem 0.75rem;
+    background-color: #393939;
+    border: 1px solid #393939;
+    color: #656565;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .forms{
+    &-input__send{
+      width: 100%;
+      .btn-envio{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        border:none;
+        width: 100%;
+        font-size: 14px;
+        background-color:#00DB5C;
+        color: #000;
+        font-weight: 700;
+        border-radius: 5px;
+
+        &.cyber{
+          background-color:#00BAFF;
+          
+        }
+      }
+    }
   }
 }
 
