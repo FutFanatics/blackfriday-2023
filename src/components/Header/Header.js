@@ -303,7 +303,7 @@ class Header extends Component  {
 
     checkLogoDate = () => {
         const currentDate = new Date();
-        const logoChangeDate = new Date('2023-10-30'); 
+        const logoChangeDate = new Date('2023-11-27'); 
         if (currentDate >= logoChangeDate) {
             
             this.setState({

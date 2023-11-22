@@ -30,7 +30,7 @@ function Menu_Mobile(){
                         <li><a href="https://www.futfanatics.com.br/esportes">Esportes</a></li>
                         <li><a href="https://www.futfanatics.com.br/calcados">Calçados</a></li>
                         <li><a href="https://www.futfanatics.com.br/casual">Casual</a></li>
-                        <li><a href="https://www.futfanatics.com.br/outlet">outlet</a></li>
+                        
                     </ul>
                 </li>
                 <li>
@@ -785,7 +785,7 @@ function Menu_Mobile(){
             </ul>
         </li>
 
-        <li><a href="https://www.futfanatics.com.br/outlet" className="font-weight-bold">outlet</a></li>
+        
         <li className="text-center">
             <a href="https://www.futfanatics.net/?utm_source=futfanatics-nacional&utm_medium=referral&utm_campaign=selo-topo" target="_blank" className="link-inter"><i className="icon-link-inter"></i>International Orders</a>
         </li>

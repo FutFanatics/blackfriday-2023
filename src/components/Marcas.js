@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import  { useState, useEffect } from 'react';
 import MarcasBlack from "./marcasBlack.js";
+import MarcasCyber from "./marcasCyber.js";
 
 
 function Marcas() {
@@ -35,14 +36,14 @@ function Marcas() {
     ]
   }
   const [conteudo, setConteudo] = useState(<MarcasBlack></MarcasBlack>);
-    const dataDeMudanca = new Date('2023-10-15');
+    const dataDeMudanca = new Date('2023-11-27');
 
     useEffect(() => {
         const verificarData = () => {
           const dataAtual = new Date();
     
           if (dataAtual >= dataDeMudanca) {
-            setConteudo(<MarcasBlack></MarcasBlack>);
+            setConteudo(<MarcasCyber/>);
           }
         };
         verificarData();

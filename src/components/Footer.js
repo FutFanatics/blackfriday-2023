@@ -37,7 +37,7 @@ function Footer(){
     const [contact, setcontact] = useState(false);
     const [certificate, setcertificate] = useState(false);
     const [dataAtingida, setDataAtingida] = useState(false);
-    const dataDeMudanca = new Date('2023-10-15');
+    const dataDeMudanca = new Date('2023-11-27');
 
     useEffect(() => {
         const verificarData = () => {

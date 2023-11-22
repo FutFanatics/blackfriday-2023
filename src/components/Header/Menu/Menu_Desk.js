@@ -1,15 +1,38 @@
-import bannerLoja from '../../../img/banner/bannersmenu/bannerloja.png';
-import bannerBrasileiro from '../../../img/banner/bannersmenu/banner-brasileiro.png';
-import bannerInternacionais from '../../../img/banner/bannersmenu/banner-internacionais.png';
-import bannerSelecoes from '../../../img/banner/bannersmenu/banner-selecoes.png';
-import bannerFutebol from '../../../img/banner/bannersmenu/banner-futebol.png';
-import bannerTreino from '../../../img/banner/bannersmenu/banner-treino.png';
-import bannerEsportes from '../../../img/banner/bannersmenu/banner-esportes.png';
-import bannerCalcados from '../../../img/banner/bannersmenu/banner-calcados.png';
-import bannerCasual from '../../../img/banner/bannersmenu/banner-casual.png';
+
 import icondown from '../../../img/icon/icon-down.svg';
 
 function Menu_Desk(){
+    let bannerLoja = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/loja.png';
+            let bannerBrasileiro = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/brasileiro.png';
+            let bannerInternacionais = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/internacional.png';
+            let bannerSelecoes = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/selecoes.png';
+            let bannerFutebol = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/futebol.png';
+            let bannerTreino = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/treino.png';
+            let bannerEsportes = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/esportes.png';
+            let bannerCalcados = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/calcado.png';
+            let bannerCasual = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/casual.png';
+     
+            const getBannerForDate = () => {
+                const currentDate = new Date();
+                const blackFridayDate = new Date('2023-11-27'); 
+        
+                if (currentDate >= blackFridayDate) {
+        
+            bannerLoja = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/loja.png';
+            bannerBrasileiro = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/brasileiro.png';
+            bannerInternacionais = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/internacional.png';
+            bannerSelecoes = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/selecoes.png';
+            bannerFutebol = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/futebol.png';
+            bannerTreino = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/treino.png';
+            bannerEsportes = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/esportes.png';
+            bannerCalcados = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/calcados.png';
+            bannerCasual = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/casual.png';
+        }
+        
+    };
+    getBannerForDate();
+    
+  
     return(
         <div className="container-fluid menu-desk">
             <div className="row">
@@ -35,7 +58,7 @@ function Menu_Desk(){
                                                                 <li><a href="https://www.futfanatics.com.br/esportes">Esportes</a></li>
                                                                 <li><a href="https://www.futfanatics.com.br/calcados">Calçados</a></li>
                                                                 <li><a href="https://www.futfanatics.com.br/casual">Casual</a></li>
-                                                                <li><a href="https://www.futfanatics.com.br/outlet">outlet</a></li>
+                                                                
                                                             </ul>
                                                         </li>
                                                     </ul>
@@ -204,7 +227,7 @@ function Menu_Desk(){
                                                 </div>
                                                 <div className="flex-shrink-0 d-none d-lg-block">
                                                     <div className="menu-img">
-                                                        <a href="https://www.futfanatics.com.br/brasileirao" target="{{ settings.menu_brasileiros_link_target }}">
+                                                        <a href="https://www.futfanatics.com.br/clubes-brasileiros?loja=311840&categoria=11&range=&variacao=camisa-oficial_sim" target="{{ settings.menu_brasileiros_link_target }}">
                                                             <img className='bannermenu' src={bannerBrasileiro} alt="banner intercionais" />
                                                         </a>
                                                     </div>
@@ -309,7 +332,7 @@ function Menu_Desk(){
                                                 </div>
                                                 <div className="flex-shrink-0 d-none d-lg-block">
                                                     <div className="menu-img">
-                                                        <a href="https://www.futfanatics.com.br/champions-league" target="{{ settings.menu_internacionais_link_target }}">
+                                                        <a href="https://www.futfanatics.com.br/loja/busca.php?categoria=523-racing-club" target="{{ settings.menu_internacionais_link_target }}">
                                                         <img className='bannermenu' src={bannerInternacionais} alt="banner intercionais" />
                                                         </a>
                                                     </div>
@@ -405,7 +428,7 @@ function Menu_Desk(){
                                                 </div>
                                                 <div className="flex-shrink-0 d-none d-lg-block">
                                                     <div className="menu-img">
-                                                        <a href="https://www.futfanatics.com.br/almanaque-copa-mundo" target="{{ settings.menu_selecoes_link_target }}">
+                                                        <a href="https://www.futfanatics.com.br/selecoes?loja=311840&categoria=4&marca=marca_puma&range=" target="{{ settings.menu_selecoes_link_target }}">
                                                         <img className='bannermenu' src={bannerSelecoes} alt="banner intercionais" />
                                                         </a>
                                                     </div>
@@ -515,7 +538,7 @@ function Menu_Desk(){
                                                 </div>
                                                 <div className="flex-shrink-0 d-none d-lg-block">
                                                     <div className="menu-img">
-                                                        <a href="https://www.futfanatics.com.br/loja/busca.php?palavra_busca=adamant" target="{{ settings.menu_futebol_link_target }}">
+                                                        <a href="https://www.futfanatics.com.br/futebol/chuteiras?loja=311840&categoria=1161&marca=marca_kappa&range=" target="{{ settings.menu_futebol_link_target }}">
                                                         <img className='bannermenu' src={bannerFutebol} alt="banner intercionais" />
                                                         </a>
                                                     </div>
@@ -622,7 +645,7 @@ function Menu_Desk(){
                                                 </div>
                                                 <div className="flex-shrink-0 d-none d-lg-block">
                                                     <div className="menu-img">
-                                                        <a href="https://www.futfanatics.com.br/loja/busca.php?loja=311840&amp;palavra_busca=challeger&amp;marca=marca_olympikus&amp;range=" target="{{ settings.menu_treino_link_target }}">
+                                                        <a href="https://www.futfanatics.com.br/loja/busca.php?loja=311840&palavra_busca=float&marca=marca_fila&range=" target="{{ settings.menu_treino_link_target }}">
                                                         <img className='bannermenu' src={bannerTreino} alt="banner intercionais" />
                                                         </a>
                                                     </div>
@@ -749,7 +772,7 @@ function Menu_Desk(){
                                                 </div>
                                                 <div className="flex-shrink-0 d-none d-lg-block">
                                                     <div className="menu-img">
-                                                        <a href="https://www.futfanatics.com.br/esportes/basquete/?loja=311840&amp;categoria=902&amp;marca=marca_nba&amp;range=" target="{{ settings.menu_esportes_link_target }}">
+                                                        <a href="https://www.futfanatics.com.br/esportes/automobilismo/" target="{{ settings.menu_esportes_link_target }}">
                                                         <img className='bannermenu' src={bannerEsportes} alt="banner intercionais" />
                                                         </a>
                                                     </div>
@@ -845,7 +868,7 @@ function Menu_Desk(){
                                                 </div>
                                                 <div className="flex-shrink-0 d-none d-lg-block">
                                                     <div className="menu-img">
-                                                        <a href="https://www.futfanatics.com.br/tenis-fila-kr5-coral" target="{{ settings.menu_calcados_link_target }}">
+                                                        <a href="https://www.futfanatics.com.br/tenis-adidas-ultraboost-light-branco-e-preto" target="{{ settings.menu_calcados_link_target }}">
                                                         <img className='bannermenu' src={bannerCalcados} alt="banner intercionais" />
                                                         </a>
                                                     </div>
@@ -943,7 +966,7 @@ function Menu_Desk(){
                                                 </div>
                                                 <div className="flex-shrink-0 d-none d-lg-block">
                                                     <div className="menu-img">
-                                                        <a href="https://www.futfanatics.https://www.futfanatics.com.br/loja/busca.php?palavra_busca=fatal.br/casual?loja=311840&amp;categoria=1&amp;marca=marca_mash&amp;range=" target="{{ setclasstings.menu_casual_link_target }}">
+                                                        <a href="https://www.futfanatics.com.br/loja/busca.php?loja=311840&palavra_busca=klin&marca=marca_klin&range=" target="{{ setclasstings.menu_casual_link_target }}">
                                                         <img className='bannermenu' src={bannerCasual} alt="banner intercionais" />
                                                         </a>
                                                     </div>
@@ -953,9 +976,7 @@ function Menu_Desk(){
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <a href="https://www.futfanatics.com.br/outlet" className="title-hexa">outlet</a>
-                            </li>
+                            
                         </ul>
                     </nav>
                 </div>

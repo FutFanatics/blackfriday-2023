@@ -15,7 +15,7 @@ import DescontosBlack from './descontosblack';
 import DescontosCyber from './descontoscyber';
 function Descontos() {
     const [conteudo, setConteudo] = useState(<DescontosBlack></DescontosBlack>);
-    const dataDeMudanca = new Date('2023-10-15');
+    const dataDeMudanca = new Date('2023-11-27');
 
     useEffect(() => {
         const verificarData = () => {

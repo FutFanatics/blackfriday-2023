@@ -8,28 +8,28 @@ import { ImgBanner } from "./banner";
 import { BoxTitle } from "./box";
 import { Section } from "./section";
 import { TitleMarca } from "./Text";
-
+import  { useState, useEffect } from 'react';
 import Imagemteste from '../img/banner/destaque-banner.png'
+import Destaqueblack from './DestaqueBlack';
+import DestaqueCyber from './DestaqueCyber';
 
 function Destaque() {
-    const DestaqueSlick={
-        dots:true,
-        arrows:false,
-        speed: 500,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        responsive:[
-          {
-              breakpoint: 600,
-              settings : {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                dots: false,
-                arrows:false,
-              }
-            },
-        ]
-    }
+    const [conteudo, setConteudo] = useState(<Destaqueblack></Destaqueblack>);
+    const dataDeMudanca = new Date('2023-11-27');
+
+    useEffect(() => {
+        const verificarData = () => {
+          const dataAtual = new Date();
+    
+          if (dataAtual >= dataDeMudanca) {
+            setConteudo(<DestaqueCyber></DestaqueCyber>);
+          }
+        };
+        verificarData();
+
+    const intervalo = setInterval(verificarData, 60000);
+        return () => clearInterval(intervalo);
+    }, []);
         return(
             <Section className='c-destaque'>
                 <div className='container'>
@@ -39,48 +39,7 @@ function Destaque() {
                     </TitleMarca>
                 </BoxTitle>
 
-                    <Slider {...DestaqueSlick} className='slick-destaque'>
-                        <div className='item'>
-                            <a>
-                                <ImgBanner src={Imagemteste}/>
-                            </a>
-                        </div>
-                        <div className='item'>
-                            <a>
-                                <ImgBanner src={Imagemteste}/>
-                            </a>
-                        </div>
-                        <div className='item'>
-                            <a>
-                                <ImgBanner src={Imagemteste}/>
-                            </a>
-                        </div>
-                        <div className='item'>
-                            <a>
-                                <ImgBanner src={Imagemteste}/>
-                            </a>
-                        </div>
-                        <div className='item'>
-                            <a>
-                                <ImgBanner src={Imagemteste}/>
-                            </a>
-                        </div>
-                        <div className='item'>
-                            <a>
-                                <ImgBanner src={Imagemteste}/>
-                            </a>
-                        </div>
-                        <div className='item'>
-                            <a>
-                                <ImgBanner src={Imagemteste}/>
-                            </a>
-                        </div>
-                        <div className='item'>
-                            <a>
-                                <ImgBanner src={Imagemteste}/>
-                            </a>
-                        </div>
-                    </Slider>
+                    {conteudo}
                 </div>
             </Section>
         )

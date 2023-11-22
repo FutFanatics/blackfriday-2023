@@ -12,7 +12,7 @@ import BannersBlack from './bannersblack';
 
 function Banners() {
     const [conteudo, setConteudo] = useState(<BannersBlack/>);
-    const dataDeMudanca = new Date('2023-10-15');
+    const dataDeMudanca = new Date('2023-11-27');
 
     useEffect(() => {
         const verificarData = () => {

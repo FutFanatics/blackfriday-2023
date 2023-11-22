@@ -1,32 +1,34 @@
-import Desconto10 from "../img/descontos/Desconto-10.png";
-import Desconto20 from "../img/descontos/Desconto-20.png";
-import Desconto30 from "../img/descontos/Desconto-30.png";
-import Desconto40 from "../img/descontos/Desconto-40.png";
+
 import { BoxDesconto } from "./box";
 
 function DescontosBlack() {
+  const Desconto10 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/desconto-10.png';
+  const Desconto20 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/desconto-20.png';
+  const Desconto30 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/desconto-30.png';
+  const Desconto40 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/desconto-40.png';
   return (
     <>
       <div className="col-md-6 d-flex col-left">
         <BoxDesconto>
-          <a>
+          <a href="https://www.futfanatics.com.br/loja/busca.php?loja=311840&range=6.00-31.00">
             <img className="desconto-img" src={Desconto10} />
           </a>
         </BoxDesconto>
         <BoxDesconto>
-          <a>
+          <a href="https://www.futfanatics.com.br/loja/busca.php/?loja=311840&range=6.00-61.00">
             <img className="desconto-img" src={Desconto20} />
           </a>
         </BoxDesconto>
       </div>
       <div className="col-md-6 d-flex col-right">
         <BoxDesconto>
-          <a>
+          <a href="https://www.futfanatics.com.br/loja/busca.php/?loja=311840&range=6.00-108.00">
             <img className="desconto-img" src={Desconto30} />
-          </a>
+          </a> 
         </BoxDesconto>
         <BoxDesconto>
-          <a>
+          <a href="https://www.futfanatics.com.br/loja/busca.php/?loja=311840&range=6.00-211.00&order=2
+">
             <img className="desconto-img" src={Desconto40} />
           </a>
         </BoxDesconto>

@@ -40,13 +40,16 @@ class Forms extends Component {
     
             return false;
         });
+
         const today = new Date();
-        const targetDate = new Date('2023-10-15');
-    
-        if (today.toDateString() >= targetDate.toDateString()) {
-          $('.btn-envio').addClass('cyber');
-        }
-      }
+  const targetDate = new Date('2023-11-27');
+
+  if (today < targetDate) {
+    $('.btn-envio').removeClass('cyber');
+  } else {
+    $('.btn-envio').addClass('cyber');
+  }
+};   
   render() {
     return (
       <section className="c-forms">

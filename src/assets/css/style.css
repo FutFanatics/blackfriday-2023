@@ -106,6 +106,7 @@
     background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/home/black-home.png");
     min-height: 70vh;
     background-size: cover;
+    background-position: center;
   }
 }
 .c-home.cyber {
@@ -118,6 +119,20 @@
   .c-home.cyber {
     min-height: 70vh;
     background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/home/cyber-home.png");
+    background-position: center;
+    background-size: cover;
+  }
+}
+.c-home.prorrogado {
+  background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/banner-full-prorrogado_mob.png");
+  background-position: center;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+@media (min-width: 1200px) {
+  .c-home.prorrogado {
+    min-height: 70vh;
+    background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/banner-full-prorrogado.png");
     background-position: center;
     background-size: cover;
   }
@@ -288,8 +303,6 @@
 }
 .c-destaque .slick-destaque .item {
   padding: 8px;
-  height: 350px;
-  width: 210px !important;
   overflow: hidden;
 }
 
@@ -1333,6 +1346,15 @@ header .header-nav .tag-new {
   height: 40px;
   font-weight: 500;
   font-size: 14px;
+}
+.c-forms .forms-input__text {
+  margin-bottom: 16px;
+}
+@media (min-width: 1200px) {
+  .c-forms .forms-input__text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 .c-forms .forms-input__send {
   width: 100%;
