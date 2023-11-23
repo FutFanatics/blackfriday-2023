@@ -45,8 +45,8 @@ function Install() {
                   className="app-install"
                   src={`${
                     dataAtingida
-                      ? "https://beta.futfanatics.com.br/blackfriday-2023/img/app/app-cyber.png"
-                      : "https://beta.futfanatics.com.br/blackfriday-2023/img/app/app-black.png"
+                      ? "https://blackfriday.futfanatics.com.br/img/app/app-cyber.png"
+                      : "https://blackfriday.futfanatics.com.br/img/app/app-black.png"
                   }`}
                 />
               </div>

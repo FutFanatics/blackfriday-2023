@@ -34,11 +34,11 @@ function BannerBottomCyber() {
             },
         ]
     }
-    const BannerFull = 'https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannerscyber/banner-middle-desk.png';
-  const BannerFullMob = 'https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannerscyber/banner-middle_mobile.png';
-  const BannerBottom1 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannerscyber/trio-bottom_cyber.png';
-  const BannerBottom2 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannerscyber/trio-bottom_cyber2.png';
-  const BannerBottom3 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannerscyber/trio-bottom_cyber3.png';
+    const BannerFull = 'https://blackfriday.futfanatics.com.br/img/banner/bannerscyber/banner-middle-desk.png';
+  const BannerFullMob = 'https://blackfriday.futfanatics.com.br/img/banner/bannerscyber/banner-middle_mobile.png';
+  const BannerBottom1 = 'https://blackfriday.futfanatics.com.br/img/banner/bannerscyber/trio-bottom_cyber.png';
+  const BannerBottom2 = 'https://blackfriday.futfanatics.com.br/img/banner/bannerscyber/trio-bottom_cyber2.png';
+  const BannerBottom3 = 'https://blackfriday.futfanatics.com.br/img/banner/bannerscyber/trio-bottom_cyber3.png';
 
         return(
             <>

@@ -2,10 +2,10 @@
 import { BoxDesconto } from "./box";
 
 function DescontosBlack() {
-  const Desconto10 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/desconto-10.png';
-  const Desconto20 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/desconto-20.png';
-  const Desconto30 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/desconto-30.png';
-  const Desconto40 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/desconto-40.png';
+  const Desconto10 = 'https://blackfriday.futfanatics.com.br/img/descontos/desconto-10.png';
+  const Desconto20 = 'https://blackfriday.futfanatics.com.br/img/descontos/desconto-20.png';
+  const Desconto30 = 'https://blackfriday.futfanatics.com.br/img/descontos/desconto-30.png';
+  const Desconto40 = 'https://blackfriday.futfanatics.com.br/img/descontos/desconto-40.png';
   return (
     <>
       <div className="col-md-6 d-flex col-left">

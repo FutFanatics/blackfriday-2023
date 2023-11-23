@@ -13,8 +13,9 @@ import Imagemteste from "../img/banner/destaque-banner.png";
 
 function DestaqueCyber() {
   const DestaqueSlick = {
-    dots: true,
-    arrows: false,
+    dots: false,
+    arrows: true,
+    infinite:true,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 3,
@@ -23,34 +24,34 @@ function DestaqueCyber() {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           dots: false,
           arrows: false,
         },
       },
     ],
   };
-  const Aprrove = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/approve.png';
-  const Betel = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/betel.png';
-  const Braziline = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/braziline.png';
-  const Coca = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/coca-cola.png';
-  const colcci = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/colcci.png';
-  const Diversao = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/diversao.png';
-  const Fila = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/fila.png';
-  const Hang = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/hang loose.png';
-  const Hurley = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/hurley.png';
-  const Kenner = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/kenner.png';
-  const Mizuno= 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/mizuno.png';
-  const Nicoboco= 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/nicoboco.png';
-  const Oakley = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/oakley.png';
-  const Olympikus = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/olympikus.png';
-  const Oxn= 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/oxn.png';
-  const Puma = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/puma.png';
-  const Redley = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/redley.png';
-  const Retromania = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/retro-mania.png';
-  const SurfCenter = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/surf-center.png';
-  const Umbro = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/umbro.png';
-  const UnderArmour = 'https://beta.futfanatics.com.br/blackfriday-2023/img/destaque/destaque-cyber/under-armour.png';
+  const Aprrove = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/approve.png';
+  const Betel = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/betel.png';
+  const Braziline = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/braziline.png';
+  const Coca = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/coca-cola.png';
+  const colcci = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/colcci.png';
+  const Diversao = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/diversao.png';
+  const Fila = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/fila.png';
+  const Hang = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/hang loose.png';
+  const Hurley = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/hurley.png';
+  const Kenner = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/kenner.png';
+  const Mizuno= 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/mizuno.png';
+  const Nicoboco= 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/nicoboco.png';
+  const Oakley = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/oakley.png';
+  const Olympikus = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/olympikus.png';
+  const Oxn= 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/oxn.png';
+  const Puma = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/puma.png';
+  const Redley = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/redley.png';
+  const Retromania = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/retro-mania.png';
+  const SurfCenter = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/surf-center.png';
+  const Umbro = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/umbro.png';
+  const UnderArmour = 'https://blackfriday.futfanatics.com.br/img/destaque/destaque-cyber/under-armour.png';
 
   return (
     <Slider {...DestaqueSlick} className="slick-destaque">

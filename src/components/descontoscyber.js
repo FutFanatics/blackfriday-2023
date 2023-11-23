@@ -5,10 +5,10 @@ import Cyber40 from '../img/descontos/cyber-40.png'
 import { BoxDesconto } from './box'
 
 function DescontosCyber() {
-  const Cyber10 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/cyber-10.png';
-  const Cyber20 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/cyber-20.png';
-  const Cyber30 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/cyber-30.png';
-  const Cyber40 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/descontos/cyber-40.png';
+  const Cyber10 = 'https://blackfriday.futfanatics.com.br/img/descontos/cyber-10.png';
+  const Cyber20 = 'https://blackfriday.futfanatics.com.br/img/descontos/cyber-20.png';
+  const Cyber30 = 'https://blackfriday.futfanatics.com.br/img/descontos/cyber-30.png';
+  const Cyber40 = 'https://blackfriday.futfanatics.com.br/img/descontos/cyber-40.png';
   return(
     
     <>

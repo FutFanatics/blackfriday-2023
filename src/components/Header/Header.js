@@ -20,10 +20,10 @@ class Header extends Component  {
     constructor(props) {
         super(props);
         this.state = {
-            logoImage: "https://beta.futfanatics.com.br/blackfriday-2023/img/icon/futfanatics.svg", 
-            CartImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/iconcart.svg",
-            InternacionalImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/internacional.svg",
-            UserImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/iconuser.svg",
+            logoImage: "https://blackfriday.futfanatics.com.br/img/icon/futfanatics.svg", 
+            CartImage:"https://blackfriday.futfanatics.com.br/img/icon/iconcart.svg",
+            InternacionalImage:"https://blackfriday.futfanatics.com.br/img/icon/internacional.svg",
+            UserImage:"https://blackfriday.futfanatics.com.br/img/icon/iconuser.svg",
         };
     }
     
@@ -307,10 +307,10 @@ class Header extends Component  {
         if (currentDate >= logoChangeDate) {
             
             this.setState({
-                logoImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/futfanaticscyber.svg", 
-                CartImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/icon-cartcyber.svg",
-                InternacionalImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/internacionalcyber.svg",
-                UserImage:"https://beta.futfanatics.com.br/blackfriday-2023/img/icon/iconusercyber.svg",
+                logoImage:"https://blackfriday.futfanatics.com.br/img/icon/futfanaticscyber.svg", 
+                CartImage:"https://blackfriday.futfanatics.com.br/img/icon/icon-cartcyber.svg",
+                InternacionalImage:"https://blackfriday.futfanatics.com.br/img/icon/internacionalcyber.svg",
+                UserImage:"https://blackfriday.futfanatics.com.br/img/icon/iconusercyber.svg",
             });
             $('.header-top').addClass('cyber');
         }

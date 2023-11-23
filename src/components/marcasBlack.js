@@ -16,7 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 function MarcasBlack() {
   const marcasSlick = {
     dots: false,
-    arrows: false,
+    arrows: true,
     speed: 500,
     slidesToShow: 10,
     slidesToScroll: 4,
@@ -24,8 +24,8 @@ function MarcasBlack() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           dots: false,
           arrows: false,
         },
@@ -225,7 +225,7 @@ function MarcasBlack() {
           />
 </a>
           
-          <NameMarca>underarmoUr</NameMarca>
+          <NameMarca>under armoUr</NameMarca>
         </BoxMarca>
       </div>
       <div className="item">
@@ -299,7 +299,7 @@ function MarcasBlack() {
         <a href="https://www.futfanatics.com.br/clubes-brasileiros?loja=311840&categoria=11&marca=marca_surf-center&range=
 ">
   <img
-            src={icons.item21}
+            src={icons.item23}
             className="img-marca lozad"
             alt="categoria internacional"
           />
@@ -312,7 +312,7 @@ function MarcasBlack() {
         <BoxMarca>
         <a href="https://www.futfanatics.com.br/clubes-brasileiros?loja=311840&categoria=11&marca=marca_betel&range=">
           <img
-            src={icons.item23}
+            src={icons.item22}
             className="img-marca lozad"
             alt="categoria internacional"
           />

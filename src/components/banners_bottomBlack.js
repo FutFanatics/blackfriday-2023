@@ -6,8 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function BannerBottomBlack() {
-    const [BannerFull, setBannerFull] = useState('https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/banner-middle_desk.png');
-    const [BannerFullMob, setBannerFullMob] = useState('https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/banner-middle_mobile.png');
+    const [BannerFull, setBannerFull] = useState('https://blackfriday.futfanatics.com.br/img/banner/bannersblack/banner-middle_desk.png');
+    const [BannerFullMob, setBannerFullMob] = useState('https://blackfriday.futfanatics.com.br/img/banner/bannersblack/banner-middle_mobile.png');
   
     const bannersbottom = {
       dots: true,
@@ -28,32 +28,35 @@ function BannerBottomBlack() {
       ],
     };
   
-    const BannerBottom1 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/trio-bottom_1.png';
-    const BannerBottom2 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/trio-bottom_2.png';
-    const BannerBottom3 = 'https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/trio-bottom_3.png';
+    const BannerBottom1 = 'https://blackfriday.futfanatics.com.br/img/banner/bannersblack/trio-bottom_1.png';
+    const BannerBottom2 = 'https://blackfriday.futfanatics.com.br/img/banner/bannersblack/trio-bottom_2.png';
+    const BannerBottom3 = 'https://blackfriday.futfanatics.com.br/img/banner/bannersblack/trio-bottom_3.png';
   
     useEffect(() => {
-      const dataCondicao = new Date('2023-11-10');
+      const dataCondicao = new Date('2023-11-25');
       const dataAtual = new Date();
   
       if (
         dataAtual.getTime() >= dataCondicao.getTime()
       ) {
-        setBannerFull('https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/banner-middle-prorrogado.png');
-        setBannerFullMob('https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/banner-middle_mobile-prorrogado.png');
+        setBannerFull('https://blackfriday.futfanatics.com.br/img/banner/bannersblack/banner-middle-prorrogado.png');
+        setBannerFullMob('https://blackfriday.futfanatics.com.br/img/banner/bannersblack/banner-middle_mobile-prorrogado.png');
       }
     }, []); 
   
   return (
     <>
       <div className='box-banner-full'>
-      <img className='banner-full d-md-block d-none' src={BannerFull} alt="BannerFull" />
+        <a href="https://www.futfanatics.com.br/esportes?order=0">
+        <img className='banner-full d-md-block d-none' src={BannerFull} alt="BannerFull" />
+        </a>
+      
         <img className='banner-full d-md-none' src={BannerFullMob} alt="BannerFullMob" />
       </div>
       <div className='container mt-3'>
         <Slider {...bannersbottom} className='slick-banners_bottom'>
           <div className='item'>
-            <a href='https://www.futfanatics.com.br/calcados/corrida/?order=4'>
+            <a href='https://www.futfanatics.com.br/futebol/chuteiras?order=1'>
               <img className='bannersBottom' src={BannerBottom1} alt="BannerBottom1" />
             </a>
           </div>

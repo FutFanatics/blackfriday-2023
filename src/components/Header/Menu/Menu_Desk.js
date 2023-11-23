@@ -2,15 +2,15 @@
 import icondown from '../../../img/icon/icon-down.svg';
 
 function Menu_Desk(){
-    let bannerLoja = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/loja.png';
-            let bannerBrasileiro = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/brasileiro.png';
-            let bannerInternacionais = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/internacional.png';
-            let bannerSelecoes = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/selecoes.png';
-            let bannerFutebol = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/futebol.png';
-            let bannerTreino = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/treino.png';
-            let bannerEsportes = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/esportes.png';
-            let bannerCalcados = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/calcado.png';
-            let bannerCasual = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/black/casual.png';
+    let bannerLoja = 'https://blackfriday.futfanatics.com.br/img/menu/black/loja.png';
+            let bannerBrasileiro = 'https://blackfriday.futfanatics.com.br/img/menu/black/brasileiro.png';
+            let bannerInternacionais = 'https://blackfriday.futfanatics.com.br/img/menu/black/internacional.png';
+            let bannerSelecoes = 'https://blackfriday.futfanatics.com.br/img/menu/black/selecoes.png';
+            let bannerFutebol = 'https://blackfriday.futfanatics.com.br/img/menu/black/futebol.png';
+            let bannerTreino = 'https://blackfriday.futfanatics.com.br/img/menu/black/treino.png';
+            let bannerEsportes = 'https://blackfriday.futfanatics.com.br/img/menu/black/esportes.png';
+            let bannerCalcados = 'https://blackfriday.futfanatics.com.br/img/menu/black/calcado.png';
+            let bannerCasual = 'https://blackfriday.futfanatics.com.br/img/menu/black/casual.png';
      
             const getBannerForDate = () => {
                 const currentDate = new Date();
@@ -18,15 +18,15 @@ function Menu_Desk(){
         
                 if (currentDate >= blackFridayDate) {
         
-            bannerLoja = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/loja.png';
-            bannerBrasileiro = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/brasileiro.png';
-            bannerInternacionais = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/internacional.png';
-            bannerSelecoes = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/selecoes.png';
-            bannerFutebol = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/futebol.png';
-            bannerTreino = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/treino.png';
-            bannerEsportes = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/esportes.png';
-            bannerCalcados = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/calcados.png';
-            bannerCasual = 'https://beta.futfanatics.com.br/blackfriday-2023/img/menu/cyber/casual.png';
+            bannerLoja = 'https://blackfriday.futfanatics.com.br/img/menu/cyber/loja.png';
+            bannerBrasileiro = 'https://blackfriday.futfanatics.com.br/img/menu/cyber/brasileiro.png';
+            bannerInternacionais = 'https://blackfriday.futfanatics.com.br/img/menu/cyber/internacional.png';
+            bannerSelecoes = 'https://blackfriday.futfanatics.com.br/img/menu/cyber/selecoes.png';
+            bannerFutebol = 'https://blackfriday.futfanatics.com.br/img/menu/cyber/futebol.png';
+            bannerTreino = 'https://blackfriday.futfanatics.com.br/img/menu/cyber/treino.png';
+            bannerEsportes = 'https://blackfriday.futfanatics.com.br/img/menu/cyber/esportes.png';
+            bannerCalcados = 'https://blackfriday.futfanatics.com.br/img/menu/cyber/calcados.png';
+            bannerCasual = 'https://blackfriday.futfanatics.com.br/img/menu/cyber/casual.png';
         }
         
     };

@@ -96,21 +96,21 @@
 
 .c-home {
   min-height: 50vh;
-  background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/home/black-home_mob.png");
+  background: url("https://blackfriday.futfanatics.com.br/img/home/banner-home-mob-black.png");
   background-position: center;
   background-size: cover;
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
   .c-home {
-    background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/home/black-home.png");
+    background: url("https://blackfriday.futfanatics.com.br/img/home/banner-home-black.png");
     min-height: 70vh;
     background-size: cover;
     background-position: center;
   }
 }
 .c-home.cyber {
-  background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/home/cyber-home_mob.png");
+  background: url("https://blackfriday.futfanatics.com.br/img/home/cyber-home_mob.png");
   background-position: center;
   margin-bottom: 10px;
   background-size: cover;
@@ -118,13 +118,13 @@
 @media (min-width: 1200px) {
   .c-home.cyber {
     min-height: 70vh;
-    background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/home/cyber-home.png");
+    background: url("https://blackfriday.futfanatics.com.br/img/home/cyber-home.png");
     background-position: center;
     background-size: cover;
   }
 }
 .c-home.prorrogado {
-  background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/banner-full-prorrogado_mob.png");
+  background: url("https://blackfriday.futfanatics.com.br/img/banner/bannersblack/banner-full-prorrogado_mob.png");
   background-position: center;
   margin-bottom: 10px;
   background-size: cover;
@@ -132,7 +132,7 @@
 @media (min-width: 1200px) {
   .c-home.prorrogado {
     min-height: 70vh;
-    background: url("https://beta.futfanatics.com.br/blackfriday-2023/img/banner/bannersblack/banner-full-prorrogado.png");
+    background: url("https://blackfriday.futfanatics.com.br/img/banner/bannersblack/banner-full-prorrogado.png");
     background-position: center;
     background-size: cover;
   }
@@ -286,8 +286,10 @@
   object-fit: contain;
   transition: ease-in-out 0.6s;
 }
-.c-carousel-marcas .img-marca:hover {
-  transform: scale(1.1);
+@media (min-width: 1200px) {
+  .c-carousel-marcas .img-marca:hover {
+    transform: scale(1.1);
+  }
 }
 
 .c-destaque {
@@ -319,7 +321,7 @@
   object-fit: cover;
 }
 .c-banners-bottom .slick-banners_bottom {
-  width: 125%;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   .c-banners-bottom .slick-banners_bottom {
@@ -1367,13 +1369,13 @@ header .header-nav .tag-new {
   border: none;
   width: 100%;
   font-size: 14px;
-  background-color: #00DB5C;
+  background-color: #00db5c;
   color: #000;
   font-weight: 700;
   border-radius: 5px;
 }
 .c-forms .forms-input__send .btn-envio.cyber {
-  background-color: #00BAFF;
+  background-color: #00baff;
 }
 
 /*cyber*/

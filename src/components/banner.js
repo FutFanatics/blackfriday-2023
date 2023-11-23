@@ -5,6 +5,7 @@ export const ImgBanner = styled.img`
     width: 100%;
     transition: ease-in-out 0.7s;
     cursor: pointer;
+    border-radius:5px;
 
     &:hover{
         transform: scale(1.1);

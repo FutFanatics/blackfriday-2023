@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="https://beta.futfanatics.com.br/blackfriday-2023/img/icon/faviconblack.png" />
+    <link rel="icon" id="favicon" href="https://blackfriday.futfanatics.com.br/img/icon/faviconblack.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="iconeblack.png" />
+    <link rel="apple-touch-icon" id="site" href="https://blackfriday.futfanatics.com.br/img/icon/faviconblack.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -26,6 +26,22 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Black Friday Futfanatics - Camisas de Time e Artigos Esportivos com Descontos Legítimos</title>
+
+    <script>
+
+      function updateFavicon() {
+          const currentDate = new Date();
+          const blackFridayDate = new Date('2023-11-27');
+
+          if (currentDate >= blackFridayDate) {
+              document.getElementById('favicon').href = 'https://blackfriday.futfanatics.com.br/img/icon/faviconcyber.png';
+              document.getElementById('site').href = 'https://blackfriday.futfanatics.com.br/img/icon/faviconcyber.png';
+          }
+      }
+
+      // Call the function when the page loads
+      window.onload = updateFavicon;
+  </script>
 
     <!-- Google Analytics -->
     <script>

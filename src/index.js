@@ -26,11 +26,10 @@ root.render(
   <React.StrictMode>
     <Header />
     <App />
-    <VitrineTop />
     <Descontos></Descontos>
     <Marcas />
-    <VitrineMiddle />
     <Banners></Banners>
+    <VitrineMiddle />
     <Destaque />
     <BannersBottom />
     <Install></Install>
